@@ -23,7 +23,7 @@ jobs:
       - name: Create Database
         run: |
           mkdir -p database
-          touch database/database.sqlite
+          touch /home/runner/work/apiato/apiato/database/database.sqlite
       - name: Generate key
         run: php artisan key:generate
       - name: Directory Permissions
@@ -31,5 +31,5 @@ jobs:
       - name: Execute tests (Unit and Feature tests) via PHPUnit
         env:
           DB_CONNECTION: sqlite
-          DB_DATABASE: database/database.sqlite
+          DB_DATABASE: /home/runner/work/apiato/apiato/database/database.sqlite
         run: vendor/bin/phpunit app
