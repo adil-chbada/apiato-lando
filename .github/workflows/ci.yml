@@ -32,5 +32,6 @@ jobs:
         env:
           DB_HOST: 127.0.0.1
           DB_CONNECTION: sqlite
+          DB_PORT: 8889
           DB_DATABASE: database/database.sqlite
         run: vendor/bin/phpunit app
