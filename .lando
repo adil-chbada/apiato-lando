@@ -4,7 +4,7 @@ config:
   webroot: public
   database: mysql:8.0
   cache: redis
-  php: '8.1'
+  php: '8.0'
 services:
   database:
     portforward: 3308
