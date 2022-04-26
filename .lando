@@ -40,3 +40,8 @@ tooling:
   gm:
     service: appserver
     cmd: php artisan apiato:generate:migration
+proxy:
+  appserver:
+    - lando.lndo.site
+    - api.lando.lndo.site
+    - admin.lando.lndo.site
