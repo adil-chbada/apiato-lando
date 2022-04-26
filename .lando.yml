@@ -42,6 +42,6 @@ tooling:
     cmd: php artisan apiato:generate:migration
 proxy:
   appserver:
-    - lando.lndo.site
-    - api.lando.lndo.site
-    - admin.lando.lndo.site
+    - apiato.lndo.site
+    - api.apiato.lndo.site
+    - admin.apiato.lndo.site
